@@ -1,11 +1,200 @@
-!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Git Collaboration Practice</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f6f8;
+            color: #171717;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        .label {
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: #64748b;
+        }
+
+        h1 {
+            font-size: clamp(36px, 6vw, 58px);
+            line-height: 1.1;
+            margin: 18px 0;
+            letter-spacing: -2px;
+        }
+
+        header p {
+            color: #737373;
+            line-height: 1.7;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            padding: 32px;
+            border-radius: 18px;
+            min-height: 280px;
+            display: flex;
+            flex-direction: column;
+            transition: 0.3s ease;
+        }
+
+        .card-one {
+            background: #172554;
+            color: white;
+        }
+
+        .card-two {
+            background: white;
+            color: #171717;
+            border: 1px solid #e5e7eb;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .icon {
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+
+        .number {
+            font-size: 11px;
+            letter-spacing: 2px;
+            opacity: 0.6;
+        }
+
+        .card h2 {
+            font-size: 24px;
+            margin: 12px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.8;
+            opacity: 0.75;
+            margin-bottom: 25px;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: auto;
+        }
+
+        .card a:hover {
+            opacity: 0.6;
+        }
+
+        footer {
+            margin-top: 35px;
+            text-align: center;
+            color: #9ca3af;
+            font-size: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 22px;
+            }
+        }
+    </style>
 </head>
+
 <body>
+
+    <main class="container">
+
+        <header>
+            <span class="label">GIT COLLAB PRACTICE</span>
+
+            <h1>
+                Build Together.<br>
+                Grow Together.
+            </h1>
+
+            <p>
+                Learn, collaborate, and build something
+                amazing with Git.
+            </p>
+        </header>
+
+        <section class="cards">
+
+            <div class="card card-one">
+                <div class="icon">⑂</div>
+
+                <span class="number">01 / WORKFLOW</span>
+
+                <h2>Git Workflow</h2>
+
+                <p>
+                    Learn the fundamentals of Git:
+                    branches, commits, push, pull,
+                    and merging.
+                </p>
+
+                <a href="#">Explore More ↗</a>
+            </div>
+
+            <div class="card card-two">
+                <div class="icon">♧</div>
+
+                <span class="number">02 / TEAMWORK</span>
+
+                <h2>Team Collaboration</h2>
+
+                <p>
+                    Work together with your team,
+                    manage repositories, and solve
+                    merge conflicts.
+                </p>
+
+                <a href="#">Explore More ↗</a>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Designed for learning & collaboration.</p>
+        </footer>
+
+    </main>
 
 </body>
 </html>
