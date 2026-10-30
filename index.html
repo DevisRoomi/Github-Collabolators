@@ -52,10 +52,11 @@
             line-height: 1.7;
         }
 
+        /* TWO CARDS: LEFT & RIGHT */
         .cards {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+            gap: 25px;
         }
 
         .card {
@@ -80,6 +81,7 @@
 
         .card:hover {
             transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
         }
 
         .icon {
@@ -90,7 +92,7 @@
         .number {
             font-size: 11px;
             letter-spacing: 2px;
-            opacity: 0.6;
+            opacity: 0.7;
         }
 
         .card h2 {
@@ -101,7 +103,7 @@
         .card p {
             font-size: 14px;
             line-height: 1.8;
-            opacity: 0.75;
+            opacity: 0.85;
             margin-bottom: 25px;
         }
 
@@ -124,6 +126,7 @@
             font-size: 12px;
         }
 
+        /* RESPONSIVE */
         @media (max-width: 600px) {
             .cards {
                 grid-template-columns: 1fr;
@@ -156,6 +159,7 @@
 
         <section class="cards">
 
+            <!-- LEFT CARD -->
             <div class="card card-one">
                 <div class="icon">⑂</div>
 
@@ -172,6 +176,7 @@
                 <a href="#">Explore More ↗</a>
             </div>
 
+            <!-- RIGHT CARD -->
             <div class="card card-two">
                 <div class="icon">♧</div>
 
